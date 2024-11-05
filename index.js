@@ -8,13 +8,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const indexPage = `
-    <h3>Hello from a Node.js Application running on AWS ECS Fargate</h3>
-    <p>What would you like to see?</p>
+    <h3>Running container on AWS ECS Fargate (serverless)</h3>
+    <p>Select an option:</p>
     <ul>
         <li>Random dogs? <a href="/dogs">Click here</a></li>
-        <li>Random cats? <a href="/cats">Click here</a></li>
-        <li>Create tables on AWS RDS <a href="/create-tables">Click here</a></li>
-        <li>Check my todo list <a href="/todos">Click here</a></li>
     </ul>
 `;
 
